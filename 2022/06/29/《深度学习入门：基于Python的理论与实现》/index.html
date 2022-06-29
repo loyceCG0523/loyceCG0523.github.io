@@ -20,28 +20,35 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="@[TOC] 前言此blog为《深度学习入门：基于Python的理论与实现》的学习笔记，author为刚入门的小白，有明显错误的地方还请大家批评指正。 常用名词第一章：Python入门本章主要是介绍一些深度学习中常用的一些Python库以及相应语法。 Numpy库生成数组使用np.array( )方法，接收数据为列表，当要生成的数组为多维数组时，采用多维列表的形式。 运算法则数组与数组间的运算是以">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Scar乄心痕&amp;博客">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2022/06/29/%E3%80%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8%EF%BC%9A%E5%9F%BA%E4%BA%8EPython%E7%9A%84%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E7%8E%B0%E3%80%8B/index.html">
 <meta property="og:site_name" content="Scar乄心痕&amp;博客">
+<meta property="og:description" content="@[TOC] 前言此blog为《深度学习入门：基于Python的理论与实现》的学习笔记，author为刚入门的小白，有明显错误的地方还请大家批评指正。 常用名词第一章：Python入门本章主要是介绍一些深度学习中常用的一些Python库以及相应语法。 Numpy库生成数组使用np.array( )方法，接收数据为列表，当要生成的数组为多维数组时，采用多维列表的形式。 运算法则数组与数组间的运算是以">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6e51088d1c884d13b3fe190fc30d4df4.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/abb6d22b7d1b4e3b90785c9a9a64232b.png">
+<meta property="article:published_time" content="2022-06-29T12:12:33.865Z">
+<meta property="article:modified_time" content="2022-06-29T08:08:52.527Z">
 <meta property="article:author" content="Scar乄心痕">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/6e51088d1c884d13b3fe190fc30d4df4.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/06/29/%E3%80%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8%EF%BC%9A%E5%9F%BA%E4%BA%8EPython%E7%9A%84%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E7%8E%B0%E3%80%8B/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Scar乄心痕&博客</title>
+  <title> | Scar乄心痕&博客</title>
   
 
 
@@ -140,9 +147,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -158,10 +166,9 @@
       <meta itemprop="name" content="Scar乄心痕&博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2022/06/29/%E3%80%8A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8%EF%BC%9A%E5%9F%BA%E4%BA%8EPython%E7%9A%84%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E7%8E%B0%E3%80%8B/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -185,7 +192,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>@[TOC]</p>
+        <p>@[TOC]</p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>此blog为《深度学习入门：基于Python的理论与实现》的学习笔记，author为刚入门的小白，有明显错误的地方还请大家批评指正。</p>
 <h2 id="常用名词"><a href="#常用名词" class="headerlink" title="常用名词"></a>常用名词</h2><h2 id="第一章：Python入门"><a href="#第一章：Python入门" class="headerlink" title="第一章：Python入门"></a>第一章：Python入门</h2><p>本章主要是介绍一些深度学习中常用的一些Python库以及相应语法。</p>
 <h3 id="Numpy库"><a href="#Numpy库" class="headerlink" title="Numpy库"></a>Numpy库</h3><h4 id="生成数组"><a href="#生成数组" class="headerlink" title="生成数组"></a>生成数组</h4><p>使用np.array( )方法，接收数据为列表，当要生成的数组为多维数组时，采用多维列表的形式。</p>
@@ -202,21 +209,23 @@
 <h3 id="偏置"><a href="#偏置" class="headerlink" title="偏置"></a>偏置</h3><p>权重是控制输入信号重要性的参数，而偏置是控制神经元被激活的容易程度的参数</p>
 <h3 id="单个感知机的局限性"><a href="#单个感知机的局限性" class="headerlink" title="单个感知机的局限性"></a>单个感知机的局限性</h3><p>单个感知机的局限性在于只能表示由直线划分出来的空间，无法非线性的表达。<br>以异或为例：<br><img src="https://img-blog.csdnimg.cn/abb6d22b7d1b4e3b90785c9a9a64232b.png" alt="在这里插入图片描述"></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -269,6 +278,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%90%8D%E8%AF%8D"><span class="nav-number">2.</span> <span class="nav-text">常用名词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9APython%E5%85%A5%E9%97%A8"><span class="nav-number">3.</span> <span class="nav-text">第一章：Python入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Numpy%E5%BA%93"><span class="nav-number">3.1.</span> <span class="nav-text">Numpy库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E6%95%B0%E7%BB%84"><span class="nav-number">3.1.1.</span> <span class="nav-text">生成数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">3.1.2.</span> <span class="nav-text">运算法则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#numpy%E7%9A%84%E5%B9%BF%E6%92%AD%E6%9C%BA%E5%88%B6"><span class="nav-number">3.1.3.</span> <span class="nav-text">numpy的广播机制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#arange-%E5%87%BD%E6%95%B0"><span class="nav-number">3.1.4.</span> <span class="nav-text">arange()函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flatten-%E5%87%BD%E6%95%B0"><span class="nav-number">3.1.5.</span> <span class="nav-text">flatten()函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#matplotlib%E5%BA%93"><span class="nav-number">3.2.</span> <span class="nav-text">matplotlib库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#pyplot%E6%A8%A1%E5%9D%97"><span class="nav-number">3.2.1.</span> <span class="nav-text">pyplot模块</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#show"><span class="nav-number">3.2.1.1.</span> <span class="nav-text">.show()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#savefig"><span class="nav-number">3.2.1.2.</span> <span class="nav-text">.savefig()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#legend"><span class="nav-number">3.2.1.3.</span> <span class="nav-text">.legend()</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%84%9F%E7%9F%A5%E6%9C%BA"><span class="nav-number">4.</span> <span class="nav-text">感知机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%83%E9%87%8D"><span class="nav-number">4.1.</span> <span class="nav-text">权重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%81%8F%E7%BD%AE"><span class="nav-number">4.2.</span> <span class="nav-text">偏置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E4%B8%AA%E6%84%9F%E7%9F%A5%E6%9C%BA%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7"><span class="nav-number">4.3.</span> <span class="nav-text">单个感知机的局限性</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
